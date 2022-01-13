@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Fetch Rewards</h1>
+            <span>Create Account</span>
+
+        </header>
+
+        <form method="post">
+
+            <fieldset>
+                <legend>Basic Info</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="user-name">
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user-email">
+
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="user-password">
+
+                <label for="occupation">Occupation</label>
+                <select id="select">
+                    <option value="Default">-- Select --</option>
+                </select>
+
+                <label for="address">State</label>
+                <select id="sel">
+                    <option value="">-- Select --</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" value="submit">Register</button>
+        </form>
+
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>

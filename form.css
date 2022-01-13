@@ -1,0 +1,205 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto+Mono');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+	font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font: 1em/1.5;
+  color: rgba(30, 5, 41, 0.9);
+	background: rgb(190, 191, 192);
+}
+
+header {
+	text-align: center;  
+}
+
+h1 {
+	font-size: 1.5em;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
+	margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================= 
+  Form Element Styles
+==================================== */
+
+form {
+	padding: .875em 1.875em 1.875em;
+	background:#f8f6f8 ;
+	border: 2px solid rgba(8, 63, 87, 0.6);
+	border-radius: 3px;
+}
+
+fieldset,
+legend,
+button {
+	padding: 0;
+	border: none;
+}
+
+fieldset {
+	margin-top: 1.5em;
+}
+
+legend,
+button {
+	font-size: 1.25em;	
+}
+
+legend {
+	font-weight: bold;
+	padding-top: .5em;
+	border-top: 2px solid rgba(8, 63, 87, 0.6);
+	margin-bottom: 1.125em;
+}
+
+input[type="text"],
+input[type="email"],
+legend {
+	width: 100%;
+}
+
+label {
+	color: #000;
+	display: block;
+	margin-bottom: .5em;
+}
+
+input,
+select {
+	margin-bottom: 1.125em;	
+}
+
+input {
+	font-size: 1em;
+	font-weight: 500;
+	padding: .8em;
+	background: #f4fbff;
+	border: 1px solid rgb(52, 12, 65);
+	border-radius: 3px;
+	outline: none;
+}
+
+input:focus {
+	background: rgb(247, 244, 244);
+	border-color: #3c0d46;
+	transition: border-color .4s, background-color .4s;
+}
+
+
+
+button {
+	color: #fff;
+	padding: .55em 1.25em;
+	background: #083f57;
+	margin: 1.25em 0 .5em;
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 4px;
+	transition: all 0.5s;
+}
+
+button:hover {
+	background: rgb(38, 5, 64);
+}
+
+input, 
+select, 
+option {
+	font-family: 'roboto', sans-serif;
+}
+
+/* ================================= 
+  Page Styles
+==================================== */
+
+.container {
+	margin: auto;
+	max-width: 380px;
+}
+
+.success_text {
+    text-align: center;
+    font-weight: bold;
+}
+
+.success_text {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+}
+.success_text.show {
+    display: block;
+}
+
+.interests input {
+	margin-bottom: 0;
+}
+
+
+
+/* ================================= 
+  Helper Classes
+==================================== */
+
+.is-hidden {
+	display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 679px) {
+	header {
+		padding: 2em 0;
+	}
+	button {
+		width: 100%;
+	}
+}
+
+@media (min-width: 680px) {
+	header {
+		padding: 4.65em 0 2.5em;
+	}
+	.col {
+		float: left;
+	}
+	.col + .col {
+		margin-left: 2.5%;
+	}
+	.col-3 {
+		width: 23%;
+	}
+	.col-6 {
+		width: 49%;
+	}
+
+	label {
+		clear: both;
+	}
+}
+
+
